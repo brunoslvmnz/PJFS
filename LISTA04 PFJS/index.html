@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        trabalhadores = {
+            dados:[
+                {nome: "José da Silva", idade:20, sexo:"M", salario:2500.00},
+                {nome: "Ana Maria", idade:33, sexo: "F", salario:5500.00},
+                {nome: "Pedro Alcântara", idade:22, sexo: "M", salario:1500.00},
+                {nome: "Maria da Silva", idade: 55, sexo: "F", salario:7500.00},
+                {nome: "Antônio Carlos", idade: 45, sexo: "M", salario:1000.00}
+            ]
+        }
+        localStorage.setItem("trabalhadores" ,JSON.stringify(trabalhadores));
+        localStorage.getItem("trabalhadores");
+        
+        document.write(`<table>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Salario</th>`);
+
+         // 1. Exibir as informações de todos os trabalhadores (Sugestão: utilizar uma tabela para essafinalidade)
+        trabalhadores.dados.forEach(element => document.write(
+            `<tr><td> ${element.nome}</td>
+            <td> ${element.idade}</td>
+            <td> ${element.sexo}</td>
+            <td> ${element.salario}</td></tr>`) 
+        );
+        document.write(`</table>`);
+
+        // 2. Média salarial dos trabalhadores;
+        trabalhadores.dados.map(element,total =>  total = total + element.salary /element.length
+        // 3. Nomes dos trabalhadores que recebem salário acima de R$3.000,00
+        vet3k = trabalhadores.dados.filter(element => element.salary >= 3000)
+        // 4. Listar todas as informações dos trabalhadores do sexo masculino
+        // 5. Listar as informações dos trabalhadores do sexo feminino
+        // 6. Nome do trabalhador que recebe o maior salário
+        // 7. Nome do trabalhador que recebe o menor salário
+        // 8. Informar se há algum trabalhador do sexo masculino que recebe salário superior a R$5.000,00
+        // 9. USE A SUA CRIATIVIDADE PARA CRIAR UMA NOVA CONSULTA
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>     
