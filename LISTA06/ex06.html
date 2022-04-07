@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<style>
+    .box {
+        display: block;
+        border: 1px solid;
+    }
+</style>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        var nome = prompt("Informe o nome:");
+        var altura = prompt("Informe a altura:");
+        var largura = prompt("Informe a altura:");
+        function Box(props) {
+            return (
+                <div className="box"
+                    style={{ width: props.width + "px", height: props.height + "px" }}>
+                    <p>{props.n}</p>
+                </div>
+            )
+        };
+        ReactDOM.render(<Box n={nome} width={largura} height={altura} />, document.getElementById('root')
+        );
+    </script>
+</body>
+
+</html>
