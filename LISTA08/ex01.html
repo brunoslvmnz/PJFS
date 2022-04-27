@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@15/dist/react.min.js"> </script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Formulario extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {usr: "",pwd: ""}
+            }
+            render() {
+                return (
+                    <form action="">
+                        <h1>Login</h1>
+                        <input type="text" name="usr" id="" placeholder="Usuário" onChange={this.setData}/>
+                        <br />
+                        <input type="text" name="pwd" id="" placeholder="Senha" onChange={this.setData}/>
+                        <br />
+                        <input type="button" value="Entrar" onClick={this.validar}/>
+                        </form>
+                );
+            }
+            setData = (event) => {
+                this.setState({[event.target.name]: event.target.value});
+            }
+            validar = (event) => {
+                if (this.state.usr == "") alert("Login invalido")
+                else if (this.state.pwd == "") alert("Senha invalida")
+                else alert("Campos digitados :)")
+            }
+        }
+        ReactDOM.render(<Formulario />, document.getElementById("root"))
+    </script>
+</body>
+
+</html>

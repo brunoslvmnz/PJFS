@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@15/dist/react.min.js"> </script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Soma extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { val1: "", val2: "", resultado: "" }
+            }
+            render() {
+                return (
+                    <form action="">
+                        <h1>Calculadora</h1>
+                        <input type="text" name="val1" id="" onChange={this.capturaValor} />
+                        <br />
+                        <input type="text" name="val2" id="" onChange={this.capturaValor} />
+                        <br />
+                        <input type="button" value="Somar" onClick={this.operacao} />
+                        <br />
+                        <input type="text" name="resultado" id="" value={this.state.resultado} />
+                    </form>
+                );
+            }
+            capturaValor = (event) => {
+                this.setState({[event.target.name]: event.target.value});
+                console.log({[event.target.name]: event.target.value});
+            }
+            operacao = (event) => {
+                //validar se são numeros
+                if(this.state.val1.value == "") 
+                    alert("O primeiro valor é inválido, somente são aceitos numeros");
+                else if(this.state.val2.value == "") 
+                    alert("O segundo valor é inválido, somente são aceitos numeros");
+                //somar
+                else {
+                    this.setState({resultado: parseFloat(this.state.val1) + parseFloat(this.state.val2)});
+                    console.log(this.state.resultado);
+                }
+                
+            }
+        }
+        ReactDOM.render(<Soma />, document.getElementById("root"))
+    </script>
+</body>
+
+</html>
