@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display&display=swap');
+
+h1 {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 64px;
+    color: #FFFA87;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: 'Playfair Display';
+}
+
+h2 {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px;
+    font-family: 'Dosis', sans-serif;
+}
+
+section {
+    padding: 100px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.side {
+    display: flex;
+    align-items: flex-start;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.fotos {
+    width: 400px;
+    box-shadow: 5px 5px 5px #737373;
+}
+
+.bold {
+    text-decoration: bold;
+}
+
+.centro {
+    margin: auto;
+}
+
+.bgcinza {
+    background-color: #EFEFEF;
+}
+
+.divimgs {
+    width: 1000px;
+    height: 1000px;
+}
+
+.img1 {
+    width: 250px;
+    position: absolute;
+    top: 100;
+    right: 100;
+}
+
+.img2 {
+    width: 250px;
+    position: absolute;
+    top: 10;
+    right: 10;
+}
+
+.img3 {
+    width: 250px;
+    position: absolute;
+    top: 10;
+    right: 10;
+}
