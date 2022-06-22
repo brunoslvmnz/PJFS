@@ -41,6 +41,33 @@ p {
     margin: 10px;
     font-family: 'Dosis', sans-serif;
 }
+footer{
+    display: flex;
+    flex-flow: row;
+    background-color: #000000;
+    color: #FFFFFF;
+    
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Dosis', sans-serif;
+  }
+
+footer img{
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    height:50px;
+}
+
+label{
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px;
+    font-family: 'Dosis', sans-serif;
+    margin: 20px;  
+}
 
 .side {
     display: flex;
@@ -92,4 +119,57 @@ p {
     position: absolute;
     top: 10;
     right: 10;
+}
+
+.linha{
+    outline: 0;
+    border-width: 0 0 1px;
+    font-family: 'Dosis', sans-serif;
+    margin: 20px;
+}
+
+.botao{
+    background-color: #4BAFFE;
+    color: #FFFFFF;
+    text-decoration: double;
+    border-width: 0;
+    font-family: 'Dosis', sans-serif;
+    width: 150px;
+    height: 30px;
+    margin: 20px;
+}
+
+.depoimento{
+    background-color: #EFEFEF;
+    box-shadow: 5px 5px 5px #737373;
+    margin: 10px;
+    
+    text-align: center;
+}
+
+.fotodepoimento{
+    border-radius: 50%;
+    height: 100px;
+    margin-top:-30px;
+}
+.nomedepoimento{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color:#0007A5;
+    font-weight: bold;
+    text-align: center;
+}
+.resumodepoimento{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.descricaodepoimento{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+}
+.carroselsize{
+    height: 800px;
+    width: 650px;;
 }
